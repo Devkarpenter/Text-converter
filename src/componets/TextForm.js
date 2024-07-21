@@ -28,18 +28,18 @@ export default function Textform(props) {
   return (
     <>
     <div className="bg1">
-    <h1>{props.heading} -</h1>
+    <h1>Enter Text -</h1>
     <div className="mb-3">
-      <textarea className="form-control" value={text} onChange={handleOnChange}  id="mybox" rows="8"></textarea>
+      <textarea className="form-control form" value={text} onChange={handleOnChange}  id="mybox" rows="8"></textarea>
     </div>
-    <button className= "btn btn-primary mx-1" onClick={handleupClick}>convert to uppercase</button>
-    <button className= "btn btn-primary mx-1" onClick={handleloClick}>convert to lowercase</button>
-    <button className= "btn btn-primary mx-1" onClick={handleclearClick}>clear all</button>
+    <button className="button2" onClick={handleupClick}>convert to uppercase</button>
+    <button className= "button2" onClick={handleloClick}>convert to lowercase</button>
+    <button className= "button2" onClick={handleclearClick}>clear all</button>
     </div>
     <div class="container">
-    <h1>Your text summary</h1>
+    <h1>Your Text Summary</h1>
     <p>{text.split(" ").length} and words {text.length} charectors</p>
-    <h2>preview</h2>
+    <h2>Preview</h2>
     <p>{text}</p>
     </div>
     </>

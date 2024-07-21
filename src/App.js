@@ -14,11 +14,13 @@ function App() {
   const togglemode = () => {
     if(mode === 'light'){
       setmode('dark');
-      document.body.style.backgroundColor = "gray"
+      document.body.style.backgroundColor = "#001e1e"
+      document.body.style.color = "white"
     }
     else{
       setmode('light');
-      document.body.style.backgroundColor = "white"
+      document.body.style.backgroundColor = "#d5dbdb"
+      document.body.style.color = "black"
     }
   }
   
